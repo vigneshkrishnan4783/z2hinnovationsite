@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Careers | Z2H Innovations &amp; R&amp;D Lab</title>
+  <meta name="description" content="Join Z2H Innovations & R&D Lab in Kowdiar, Thiruvananthapuram. Open roles in Deep Learning R&D, LLM Engineering, Flutter Hybrid Apps, and Backend Systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--cyan" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--indigo" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="brand" aria-label="Z2H Innovations and R&D Lab Home">
+        <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="z2hGradCar" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00E5FF" />
+              <stop offset="0.55" stop-color="#6366F1" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+          <path d="M24 3L42 13.5V34.5L24 45L6 34.5V13.5L24 3Z" stroke="url(#z2hGradCar)" stroke-width="2.4" fill="rgba(0,229,255,0.06)" />
+          <path d="M14.5 17H28.5L15.5 31H33.5" stroke="#F8FAFC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="33.5" cy="17" r="2.6" fill="#00E5FF" />
+          <circle cx="14.5" cy="31" r="2.2" fill="#10B981" />
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Z2H Innovations</span>
+          <span class="brand__sub">R&amp;D Lab</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn--primary btn--sm btn--hide-mobile" data-modal-open="applyModal" data-role="General Talent Application">
+          Join the Lab
+        </button>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" data-mobile-drawer>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="careers.html" class="nav-link is-active">Careers</a>
+    <button type="button" class="btn btn--primary btn--block" data-modal-open="applyModal" data-role="General Talent Application">Join the Lab</button>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Careers at Z2H Innovations &amp; R&amp;D Lab</div>
+        <h1 class="hero__title">Build Frontier AI &amp; Apps From <span class="text-gradient">Thiruvananthapuram</span></h1>
+        <p class="section__subtitle">
+          We are assembling a high-caliber team of engineers, mobile architects, and deep learning researchers in Kowdiar—where curiosity meets real-world shipping speed.
+        </p>
+      </div>
+    </section>
+
+    <!-- Culture & Perks -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid-3">
+          <div class="card" data-reveal>
+            <span class="badge badge--cyan">R&amp;D CULTURE</span>
+            <h2 class="card__title">Dedicated Research Time</h2>
+            <p class="card__text">Every engineer gets protected time to prototype LLM workflows, benchmark models, and publish internal R&amp;D breakthroughs.</p>
+          </div>
+          <div class="card" data-reveal>
+            <span class="badge badge--indigo">HIGH OWNERSHIP</span>
+            <h2 class="card__title">Zero Bureaucracy Pods</h2>
+            <p class="card__text">Work directly with founders, investors, and global clients in small, autonomous squads where your architecture choices matter.</p>
+          </div>
+          <div class="card" data-reveal>
+            <span class="badge badge--emerald">HYBRID FLEXIBILITY</span>
+            <h2 class="card__title">Kowdiar Lab + Remote</h2>
+            <p class="card__text">Collaborate at our Thiruvananthapuram R&amp;D studio with flexible hybrid options and continuous upskilling stipends.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="eyebrow">Open Positions</div>
+          <h2 class="section__title">Explore Current Opportunities</h2>
+        </div>
+
+        <div class="filter-bar" data-filter-group=".role-item" role="tablist" aria-label="Filter open roles">
+          <button type="button" class="filter-btn is-active" data-filter="all">All Roles</button>
+          <button type="button" class="filter-btn" data-filter="ai">AI &amp; Deep Learning</button>
+          <button type="button" class="filter-btn" data-filter="flutter">Flutter &amp; Hybrid</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend &amp; Consulting</button>
+        </div>
+
+        <div class="lab-console__stack">
+          <article class="role-card role-item" data-category="ai" data-reveal>
+            <div>
+              <h3 class="card__title">Deep Learning &amp; LLM Research Engineer</h3>
+              <div class="role-card__meta">
+                <span>Thiruvananthapuram / Hybrid</span>
+                <span>• Full-Time</span>
+                <span>• PyTorch, RAG, Agents</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--primary btn--sm" data-modal-open="applyModal" data-role="Deep Learning & LLM Research Engineer">
+              Apply Now
+            </button>
+          </article>
+
+          <article class="role-card role-item" data-category="flutter" data-reveal>
+            <div>
+              <h3 class="card__title">Senior Flutter &amp; Hybrid App Developer</h3>
+              <div class="role-card__meta">
+                <span>Thiruvananthapuram / Remote</span>
+                <span>• Full-Time</span>
+                <span>• Flutter, Dart, Responsive UI</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--primary btn--sm" data-modal-open="applyModal" data-role="Senior Flutter & Hybrid App Developer">
+              Apply Now
+            </button>
+          </article>
+
+          <article class="role-card role-item" data-category="backend" data-reveal>
+            <div>
+              <h3 class="card__title">Backend Systems Architect (APIs &amp; Hibernate/ORM)</h3>
+              <div class="role-card__meta">
+                <span>Thiruvananthapuram / Hybrid</span>
+                <span>• Full-Time</span>
+                <span>• Java/Hibernate, Python, Cloud</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--primary btn--sm" data-modal-open="applyModal" data-role="Backend Systems Architect">
+              Apply Now
+            </button>
+          </article>
+
+          <article class="role-card role-item" data-category="backend" data-reveal>
+            <div>
+              <h3 class="card__title">Associate IT Consultant &amp; Freelance Delivery Lead</h3>
+              <div class="role-card__meta">
+                <span>Kowdiar, Thiruvananthapuram</span>
+                <span>• Full-Time / Contract</span>
+                <span>• Agile Delivery, Client Architecture</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn--primary btn--sm" data-modal-open="applyModal" data-role="Associate IT Consultant & Delivery Lead">
+              Apply Now
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid" style="grid-template-columns: 1.5fr 1fr;">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: 0.9rem;">
+            <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 3L42 13.5V34.5L24 45L6 34.5V13.5L24 3Z" stroke="#00E5FF" stroke-width="2.4" fill="rgba(0,229,255,0.06)" />
+              <path d="M14.5 17H28.5L15.5 31H33.5" stroke="#F8FAFC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Z2H Innovations &amp; R&amp;D Lab</span>
+              <span class="brand__sub">IT Consultancy • AI • Hybrid Apps</span>
+            </span>
+          </a>
+          <p class="card__text" style="max-width: 42ch;">
+            Always looking for builders passionate about clean systems, mobile craftsmanship, and deep learning research.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">R&amp;D Lab Headquarters</h3>
+          <address class="footer__address">
+            Z2H Innovations &amp; R&amp;D Lab<br />
+            M37, Kuruvankonam, Kowdiar<br />
+            Thiruvananthapuram – 695003<br />
+            Kerala, India
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Z2H Innovations &amp; R&amp;D Lab. All rights reserved.</span>
+        <span class="powered-badge">Powered by Z2H 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Career Application Modal -->
+  <div class="modal-backdrop" id="applyModal" data-modal role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+    <div class="modal">
+      <div class="modal__header">
+        <div>
+          <h3 id="applyModalTitle" class="card__title">Apply to Z2H R&amp;D Lab</h3>
+          <p class="stack-node__sub">Share your profile and portfolio links with our engineering leads.</p>
+        </div>
+        <button type="button" class="modal__close" data-modal-close aria-label="Close modal">✕</button>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="appRole">Role</label>
+          <input id="appRole" class="form-control" type="text" data-role-input readonly />
+        </div>
+        <div class="form-group">
+          <label for="appName">Full Name</label>
+          <input id="appName" class="form-control" type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="appEmail">Email Address</label>
+          <input id="appEmail" class="form-control" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="appPortfolio">GitHub / LinkedIn / Portfolio URL</label>
+          <input id="appPortfolio" class="form-control" type="url" placeholder="https://github.com/username" required />
+        </div>
+        <div class="form-group">
+          <label for="appNote">Why Z2H?</label>
+          <textarea id="appNote" class="form-control" rows="3" placeholder="Tell us about a challenging project or research you built..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Submit Application</button>
+        <div class="form-status">
+          Application recorded in preview mode! Once your backend endpoint is linked, submissions will route directly to Z2H Hiring.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

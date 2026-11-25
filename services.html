@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Services | Z2H Innovations &amp; R&amp;D Lab</title>
+  <meta name="description" content="Explore Z2H Innovations & R&D Lab services: IT consultancy, freelance engineering, hybrid web & mobile apps, backend services, LLM AI projects, and deep learning research." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--cyan" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--indigo" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="brand" aria-label="Z2H Innovations and R&D Lab Home">
+        <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="z2hGradSvc" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00E5FF" />
+              <stop offset="0.55" stop-color="#6366F1" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+          <path d="M24 3L42 13.5V34.5L24 45L6 34.5V13.5L24 3Z" stroke="url(#z2hGradSvc)" stroke-width="2.4" fill="rgba(0,229,255,0.06)" />
+          <path d="M14.5 17H28.5L15.5 31H33.5" stroke="#F8FAFC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="33.5" cy="17" r="2.6" fill="#00E5FF" />
+          <circle cx="14.5" cy="31" r="2.2" fill="#10B981" />
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Z2H Innovations</span>
+          <span class="brand__sub">R&amp;D Lab</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn--primary btn--sm btn--hide-mobile" data-modal-open="serviceModal">
+          Start a Project
+        </button>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" data-mobile-drawer>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link is-active">Services</a>
+    <a href="careers.html" class="nav-link">Careers</a>
+    <button type="button" class="btn btn--primary btn--block" data-modal-open="serviceModal">Start a Project</button>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Services &amp; Capabilities</div>
+        <h1 class="hero__title">Full-Spectrum Engineering &amp; <span class="text-gradient">Applied AI Delivery</span></h1>
+        <p class="section__subtitle">
+          From strategic IT consultancy and freelance engineering sprints to hybrid mobile apps, enterprise backends, and deep learning research—explore how Z2H builds production software.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filterable Service Catalog -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" data-filter-group=".service-item" role="tablist" aria-label="Filter services">
+          <button type="button" class="filter-btn is-active" data-filter="all">All Capabilities</button>
+          <button type="button" class="filter-btn" data-filter="consulting">IT Consultancy &amp; Freelance</button>
+          <button type="button" class="filter-btn" data-filter="engineering">Apps &amp; Backend</button>
+          <button type="button" class="filter-btn" data-filter="ai">LLM &amp; Deep Learning R&amp;D</button>
+        </div>
+
+        <div class="grid-3">
+          <article class="card service-item" data-category="consulting" data-reveal>
+            <span class="badge badge--cyan">CONSULTING</span>
+            <h2 class="card__title">IT Consultancy &amp; Architecture Strategy</h2>
+            <p class="card__text">
+              End-to-end technology roadmapping, cloud cost optimization, system audits, and CTO-level advisory for founders and growing enterprises.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Scalability &amp; security reviews</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Build-vs-buy &amp; AI readiness plans</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Advisory</span>
+              <span class="tag">Cloud Strategy</span>
+            </div>
+          </article>
+
+          <article class="card service-item" data-category="consulting" data-reveal>
+            <span class="badge badge--indigo">FREELANCE PODS</span>
+            <h2 class="card__title">Agile Freelance Engineering &amp; IT Services</h2>
+            <p class="card__text">
+              On-demand, high-ownership freelance developers and cross-functional pods ready to ship features, rescue stalled projects, or augment your team.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Weekly sprint milestones &amp; clean code</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Flexible hourly or milestone contracts</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Dedicated Devs</span>
+              <span class="tag">Rapid MVP</span>
+            </div>
+          </article>
+
+          <article class="card service-item" data-category="engineering" data-reveal>
+            <span class="badge badge--cyan">HYBRID APPS</span>
+            <h2 class="card__title">Hybrid Web &amp; Mobile App Development</h2>
+            <p class="card__text">
+              Single-codebase applications crafted with Flutter and responsive web technologies—delivering fluid UI across iPhone, Android, tablets, and desktops.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Pixel-accurate across every screen size</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Offline sync, push alerts &amp; App Store prep</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Flutter</span>
+              <span class="tag">iOS &amp; Android</span>
+              <span class="tag">Web</span>
+            </div>
+          </article>
+
+          <article class="card service-item" data-category="engineering" data-reveal>
+            <span class="badge badge--indigo">BACKEND SYSTEMS</span>
+            <h2 class="card__title">Backend Web Apps &amp; Enterprise APIs</h2>
+            <p class="card__text">
+              Robust server architectures featuring Hibernate/ORM relational data layers, REST &amp; GraphQL APIs, authentication, and automated CI/CD pipelines.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Java/Hibernate, Python &amp; Node backends</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Containerized cloud deployment</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Hibernate ORM</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </article>
+
+          <article class="card service-item" data-category="ai" data-reveal>
+            <span class="badge badge--emerald">LLM AI PROJECTS</span>
+            <h2 class="card__title">Generative AI, RAG &amp; Autonomous Agents</h2>
+            <p class="card__text">
+              Custom LLM applications grounded in your proprietary data—document intelligence, AI customer assistants, and automated internal operations.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Vector search &amp; hallucination guardrails</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Open-weights &amp; cloud model integration</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">RAG</span>
+              <span class="tag">AI Agents</span>
+              <span class="tag">Fine-Tuning</span>
+            </div>
+          </article>
+
+          <article class="card service-item" data-category="ai" data-reveal>
+            <span class="badge badge--emerald">DEEP LEARNING R&amp;D</span>
+            <h2 class="card__title">Deep Learning &amp; Deep Planning Research</h2>
+            <p class="card__text">
+              Applied R&amp;D for computer vision, time-series forecasting, anomaly detection, and multi-stage deep planning systems tailored to industry verticals.
+            </p>
+            <ul class="check-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Custom dataset curation &amp; model training</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Edge &amp; cloud inference optimization</span></li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Vision &amp; NLP</span>
+              <span class="tag">R&amp;D Lab</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Models -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="eyebrow">Engagement Models</div>
+          <h2 class="section__title">Flexible Collaboration Built Around Your Stage</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card" data-reveal>
+            <h3 class="card__title">01. Fixed-Scope MVP</h3>
+            <p class="card__text">Ideal for startups launching a validated web/mobile product or LLM proof-of-concept with clear timelines and budget certainty.</p>
+          </div>
+          <div class="card" data-reveal>
+            <h3 class="card__title">02. Dedicated Freelance Pod</h3>
+            <p class="card__text">Embed Z2H engineers directly into your Slack, Git, and sprint cadence for continuous feature velocity.</p>
+          </div>
+          <div class="card" data-reveal>
+            <h3 class="card__title">03. R&amp;D Innovation Partner</h3>
+            <p class="card__text">Co-develop proprietary deep learning models, patents, or next-generation Flutter platforms alongside our research lab.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid" style="grid-template-columns: 1.5fr 1fr;">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: 0.9rem;">
+            <svg class="brand__mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 3L42 13.5V34.5L24 45L6 34.5V13.5L24 3Z" stroke="#00E5FF" stroke-width="2.4" fill="rgba(0,229,255,0.06)" />
+              <path d="M14.5 17H28.5L15.5 31H33.5" stroke="#F8FAFC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Z2H Innovations &amp; R&amp;D Lab</span>
+              <span class="brand__sub">IT Consultancy • AI • Hybrid Apps</span>
+            </span>
+          </a>
+          <p class="card__text" style="max-width: 42ch;">
+            Engineering scalable software and applied artificial intelligence from Thiruvananthapuram for global partners.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">R&amp;D Lab Headquarters</h3>
+          <address class="footer__address">
+            Z2H Innovations &amp; R&amp;D Lab<br />
+            M37, Kuruvankonam, Kowdiar<br />
+            Thiruvananthapuram – 695003<br />
+            Kerala, India
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Z2H Innovations &amp; R&amp;D Lab. All rights reserved.</span>
+        <span class="powered-badge">Powered by Z2H 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Inquiry Modal -->
+  <div class="modal-backdrop" id="serviceModal" data-modal role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+    <div class="modal">
+      <div class="modal__header">
+        <div>
+          <h3 id="serviceModalTitle" class="card__title">Start a Project With Z2H</h3>
+          <p class="stack-node__sub">Share your requirements for a tailored technical proposal.</p>
+        </div>
+        <button type="button" class="modal__close" data-modal-close aria-label="Close modal">✕</button>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="svcName">Your Name</label>
+          <input id="svcName" class="form-control" type="text" placeholder="Full name" required />
+        </div>
+        <div class="form-group">
+          <label for="svcEmail">Email Address</label>
+          <input id="svcEmail" class="form-control" type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-group">
+          <label for="svcType">Service Needed</label>
+          <select id="svcType" class="form-control">
+            <option>Hybrid Web &amp; Mobile App (Flutter)</option>
+            <option>Backend Web Application &amp; APIs</option>
+            <option>LLM / Generative AI Project</option>
+            <option>Deep Learning R&amp;D</option>
+            <option>IT Consultancy &amp; Freelance Pod</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="svcNotes">Project Summary</label>
+          <textarea id="svcNotes" class="form-control" rows="3" placeholder="Describe your goals, target platforms, and timeline..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Submit Proposal Request</button>
+        <div class="form-status">
+          Thank you! Your project brief was captured in this preview. Our engineering team will review and respond promptly once connected.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
